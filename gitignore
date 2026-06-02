@@ -1,0 +1,43 @@
+# ─── Outputs IAM ──────────────────────────────────────────────────────────────
+output/
+reports/
+exports/
+
+# ─── Preuves légales (stockage sécurisé client — jamais dans le repo) ─────────
+*.seal
+*.ots
+*.tsr
+*.hash
+
+# ─── Données sensibles ────────────────────────────────────────────────────────
+*.csv
+*.json.bak
+*.xml.bak
+
+# ─── Credentials & secrets ────────────────────────────────────────────────────
+.env
+secrets.ps1
+*_CREDENTIALS*
+*_SECRET*
+*_PASSWORD*
+*.pfx
+*.p12
+*.key
+
+# ─── Logs d'exécution ─────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Environnements de test locaux ────────────────────────────────────────────
+.testenv
+test-output/
+sandbox/
+
+# ─── IDE / OS ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+Thumbs.db
+.DS_Store
+desktop.ini
